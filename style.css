@@ -1,0 +1,171 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fb;
+color:#222;
+transition:.4s;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:white;
+position:sticky;
+top:0;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+z-index:100;
+}
+
+.logo{
+color:#0066ff;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+nav button{
+padding:5px 10px;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(120deg,#0066ff,#00d4ff);
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero span{
+color:yellow;
+}
+
+.hero p{
+margin:20px auto;
+max-width:650px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:white;
+color:#0066ff;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+color:#0066ff;
+}
+
+.skill{
+margin-bottom:25px;
+}
+
+.bar{
+height:15px;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+}
+
+.bar span{
+display:block;
+height:100%;
+background:linear-gradient(90deg,#0066ff,#00d4ff);
+animation:grow 2s;
+}
+
+@keyframes grow{
+from{
+width:0;
+}
+}
+
+.card{
+background:white;
+padding:20px;
+margin:20px 0;
+border-left:5px solid #0066ff;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.soft{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.soft span{
+background:#0066ff;
+padding:20px;
+color:white;
+border-radius:10px;
+}
+
+#contact{
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#0066ff;
+color:white;
+}
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark header{
+background:#1e1e1e;
+}
+
+.dark .card{
+background:#1f1f1f;
+color:white;
+}
+
+.dark nav a{
+color:white;
+}
